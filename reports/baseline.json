@@ -1,0 +1,29 @@
+{
+  "summary": {
+    "extensions": 8,
+    "expected_outcomes_matched": 8,
+    "counts": {"NORMAL": 2, "CRITICAL": 2, "HIGH_RISK": 3, "REVIEW": 1},
+    "mean_risk_score": 50.0,
+    "users_behind_high_or_critical": 1251
+  },
+  "assessments": [
+    {"ext_id":"ext-001","name":"Calendar Notes","decision":"NORMAL","risk_score":0,"api_ratio":1.1,"users_exposed":83,"reasons":[],"actions":["continue routine monitoring"]},
+    {"ext_id":"ext-002","name":"AI Page Helper","decision":"CRITICAL","risk_score":100,"api_ratio":73.3,"users_exposed":612,"reasons":["publisher is not verified","recent permission expansion","non-stable or external update channel","can observe authenticated browser sessions","cookie access increases session exposure","can send browser-derived data externally","browser-to-OAuth/SaaS trust path present","AI assistant handles sensitive browser context","extreme event-volume deviation","large user blast radius"],"actions":["review extension ownership and deployment source","compare current permissions with approved baseline","remove unnecessary cookie/session access","investigate the extension update that changed permissions","review external destinations and data-handling policy"]},
+    {"ext_id":"ext-003","name":"Sales Capture","decision":"HIGH_RISK","risk_score":52,"api_ratio":3.4,"users_exposed":190,"reasons":["recent permission change","can observe authenticated browser sessions","can send browser-derived data externally","browser-to-OAuth/SaaS trust path present","material event-volume deviation"],"actions":["review extension ownership and deployment source","compare current permissions with approved baseline","investigate the extension update that changed permissions","review external destinations and data-handling policy"]},
+    {"ext_id":"ext-004","name":"Legacy Clipboard Pro","decision":"HIGH_RISK","risk_score":53,"api_ratio":0.9,"users_exposed":71,"reasons":["publisher is not verified","legacy unverified extension remains installed"],"actions":["review extension ownership and deployment source","compare current permissions with approved baseline"]},
+    {"ext_id":"ext-005","name":"Meeting Summarizer","decision":"REVIEW","risk_score":35,"api_ratio":1.5,"users_exposed":244,"reasons":["can observe authenticated browser sessions","browser-to-OAuth/SaaS trust path present","AI assistant handles sensitive browser context"],"actions":["continue routine monitoring"]},
+    {"ext_id":"ext-006","name":"PDF Toolkit","decision":"NORMAL","risk_score":0,"api_ratio":1.0,"users_exposed":120,"reasons":[],"actions":["continue routine monitoring"]},
+    {"ext_id":"ext-007","name":"Coupon Companion","decision":"CRITICAL","risk_score":100,"api_ratio":23.3,"users_exposed":330,"reasons":["publisher is not verified","recent permission expansion","non-stable or external update channel","can observe authenticated browser sessions","cookie access increases session exposure","can send browser-derived data externally","extreme event-volume deviation","large user blast radius"],"actions":["review extension ownership and deployment source","compare current permissions with approved baseline","remove unnecessary cookie/session access","investigate the extension update that changed permissions","review external destinations and data-handling policy"]},
+    {"ext_id":"ext-008","name":"Dev Header Switcher","decision":"HIGH_RISK","risk_score":60,"api_ratio":2.3,"users_exposed":48,"reasons":["publisher is not verified","recent permission change","non-stable or external update channel","can observe authenticated browser sessions"],"actions":["review extension ownership and deployment source","compare current permissions with approved baseline","investigate the extension update that changed permissions"]}
+  ],
+  "blast_radius": {
+    "ext-001":{"extension":"Calendar Notes","users":83,"resources":[],"nodes":84,"edges":83},
+    "ext-002":{"extension":"AI Page Helper","users":612,"resources":["browser-session","cookies","oauth-grants","saas-apps","ai-context"],"nodes":618,"edges":617},
+    "ext-003":{"extension":"Sales Capture","users":190,"resources":["browser-session","oauth-grants","saas-apps"],"nodes":194,"edges":193},
+    "ext-004":{"extension":"Legacy Clipboard Pro","users":71,"resources":[],"nodes":72,"edges":71},
+    "ext-005":{"extension":"Meeting Summarizer","users":244,"resources":["browser-session","oauth-grants","saas-apps","ai-context"],"nodes":249,"edges":248},
+    "ext-006":{"extension":"PDF Toolkit","users":120,"resources":[],"nodes":121,"edges":120},
+    "ext-007":{"extension":"Coupon Companion","users":330,"resources":["browser-session","cookies"],"nodes":333,"edges":332},
+    "ext-008":{"extension":"Dev Header Switcher","users":48,"resources":["browser-session"],"nodes":50,"edges":49}
+  }
+}
