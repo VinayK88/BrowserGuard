@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">BrowserGuard dashboard preview</title>
+  <desc id="desc">Static preview of the BrowserGuard synthetic browser extension risk dashboard.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#020617" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1200" height="760" rx="24" fill="#08111f"/>
+  <rect x="26" y="24" width="1148" height="712" rx="18" fill="#0b1020" stroke="#26334d"/>
+
+  <circle cx="56" cy="52" r="5" fill="#ef4444"/><circle cx="74" cy="52" r="5" fill="#f59e0b"/><circle cx="92" cy="52" r="5" fill="#22c55e"/>
+  <text x="126" y="58" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#94a3b8">browserguard.local</text>
+  <line x1="26" y1="78" x2="1174" y2="78" stroke="#26334d"/>
+
+  <text x="58" y="124" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#7dd3fc">BrowserGuard</text>
+  <text x="58" y="152" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#94a3b8">Browser &amp; Extension Detection / Response · Synthetic baseline</text>
+  <rect x="986" y="108" width="142" height="32" rx="16" fill="#0f2f2a" stroke="#1f6f5f"/><circle cx="1005" cy="124" r="5" fill="#34d399"/><text x="1018" y="129" font-family="Arial" font-size="13" fill="#a7f3d0">SYSTEM HEALTHY</text>
+
+  <!-- summary cards -->
+  <g filter="url(#shadow)">
+    <rect x="58" y="184" width="252" height="96" rx="14" fill="#131b2e" stroke="#26334d"/>
+    <rect x="330" y="184" width="252" height="96" rx="14" fill="#131b2e" stroke="#26334d"/>
+    <rect x="602" y="184" width="252" height="96" rx="14" fill="#131b2e" stroke="#26334d"/>
+    <rect x="874" y="184" width="254" height="96" rx="14" fill="#131b2e" stroke="#26334d"/>
+  </g>
+  <text x="80" y="221" font-family="Arial" font-size="13" fill="#94a3b8">EXTENSIONS</text><text x="80" y="256" font-family="Arial" font-size="30" font-weight="700" fill="#f8fafc">8</text>
+  <text x="352" y="221" font-family="Arial" font-size="13" fill="#94a3b8">CRITICAL</text><text x="352" y="256" font-family="Arial" font-size="30" font-weight="700" fill="#fb7185">2</text>
+  <text x="624" y="221" font-family="Arial" font-size="13" fill="#94a3b8">HIGH RISK</text><text x="624" y="256" font-family="Arial" font-size="30" font-weight="700" fill="#fb923c">3</text>
+  <text x="896" y="221" font-family="Arial" font-size="13" fill="#94a3b8">USERS EXPOSED</text><text x="896" y="256" font-family="Arial" font-size="30" font-weight="700" fill="#f8fafc">1,251</text>
+
+  <text x="58" y="326" font-family="Arial" font-size="18" font-weight="700" fill="#e2e8f0">Extension risk queue</text>
+  <text x="1024" y="326" font-family="Arial" font-size="13" fill="#64748b">Score / 100</text>
+
+  <!-- rows -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="58" y="348" width="1070" height="48" rx="10" fill="#131b2e" stroke="#26334d"/>
+    <circle cx="82" cy="372" r="6" fill="#fb7185"/><text x="100" y="369" font-size="15" font-weight="700" fill="#f8fafc">AI Page Helper</text><text x="100" y="386" font-size="11" fill="#94a3b8">unverified · permission drift · session/cookie · AI context · OAuth bridge</text><text x="893" y="377" font-size="12" font-weight="700" fill="#fecdd3">CRITICAL</text><text x="1064" y="377" font-size="16" font-weight="700" fill="#fb7185">100</text>
+
+    <rect x="58" y="406" width="1070" height="48" rx="10" fill="#131b2e" stroke="#26334d"/>
+    <circle cx="82" cy="430" r="6" fill="#fb7185"/><text x="100" y="427" font-size="15" font-weight="700" fill="#f8fafc">Coupon Companion</text><text x="100" y="444" font-size="11" fill="#94a3b8">unverified · external update · cookie/session · external posting · 23.3× activity</text><text x="893" y="435" font-size="12" font-weight="700" fill="#fecdd3">CRITICAL</text><text x="1064" y="435" font-size="16" font-weight="700" fill="#fb7185">100</text>
+
+    <rect x="58" y="464" width="1070" height="48" rx="10" fill="#131b2e" stroke="#26334d"/>
+    <circle cx="82" cy="488" r="6" fill="#fb923c"/><text x="100" y="485" font-size="15" font-weight="700" fill="#f8fafc">Dev Header Switcher</text><text x="100" y="502" font-size="11" fill="#94a3b8">unverified · blocking web request · permission change · beta channel</text><text x="893" y="493" font-size="12" font-weight="700" fill="#fed7aa">HIGH_RISK</text><text x="1064" y="493" font-size="16" font-weight="700" fill="#fb923c">60</text>
+
+    <rect x="58" y="522" width="1070" height="48" rx="10" fill="#131b2e" stroke="#26334d"/>
+    <circle cx="82" cy="546" r="6" fill="#fb923c"/><text x="100" y="543" font-size="15" font-weight="700" fill="#f8fafc">Legacy Clipboard Pro</text><text x="100" y="560" font-size="11" fill="#94a3b8">legacy unverified extension · clipboard access · all-URL reach</text><text x="893" y="551" font-size="12" font-weight="700" fill="#fed7aa">HIGH_RISK</text><text x="1064" y="551" font-size="16" font-weight="700" fill="#fb923c">53</text>
+
+    <rect x="58" y="580" width="1070" height="48" rx="10" fill="#131b2e" stroke="#26334d"/>
+    <circle cx="82" cy="604" r="6" fill="#fb923c"/><text x="100" y="601" font-size="15" font-weight="700" fill="#f8fafc">Sales Capture</text><text x="100" y="618" font-size="11" fill="#94a3b8">session access · external posting · OAuth bridge · permission drift · 3.4× activity</text><text x="893" y="609" font-size="12" font-weight="700" fill="#fed7aa">HIGH_RISK</text><text x="1064" y="609" font-size="16" font-weight="700" fill="#fb923c">52</text>
+
+    <rect x="58" y="638" width="1070" height="48" rx="10" fill="#131b2e" stroke="#26334d"/>
+    <circle cx="82" cy="662" r="6" fill="#facc15"/><text x="100" y="659" font-size="15" font-weight="700" fill="#f8fafc">Meeting Summarizer</text><text x="100" y="676" font-size="11" fill="#94a3b8">AI assistant · browser session · OAuth bridge</text><text x="893" y="667" font-size="12" font-weight="700" fill="#fef08a">REVIEW</text><text x="1064" y="667" font-size="16" font-weight="700" fill="#facc15">35</text>
+  </g>
+
+  <text x="58" y="716" font-family="Arial" font-size="12" fill="#64748b">Static README preview · data shown is synthetic and matches the checked-in baseline report.</text>
+</svg>
