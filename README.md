@@ -14,13 +14,21 @@
 
 **Extension permissions · update drift · cookies/sessions · AI assistants · OAuth/SaaS reach · blast radius**
 
-[Overview](#overview) · [Evidence](#baseline-evidence) · [Architecture](#architecture) · [Risk Model](#risk-model) · [API](#api--dashboard) · [Quick Start](#quick-start)
+[Overview](#overview) · [Dashboard](#dashboard-preview) · [Evidence](#baseline-evidence) · [Architecture](#architecture) · [Risk Model](#risk-model) · [API](#api--dashboard) · [Quick Start](#quick-start)
 
 </div>
 
 ---
 
 ![BrowserGuard overview](assets/browserguard-overview.svg)
+
+## Dashboard preview
+
+![BrowserGuard dashboard preview](assets/dashboard-preview.svg)
+
+> Static preview of the built-in FastAPI dashboard using the checked-in **synthetic baseline**. Run `uvicorn browserguard.api:app --reload` and open `/` for the live local dashboard.
+
+---
 
 ## Overview
 
