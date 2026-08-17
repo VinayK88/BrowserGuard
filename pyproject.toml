@@ -7,7 +7,7 @@ name='browserguard'
 version='0.2.0'
 description='Defensive browser and extension detection/response lab with hybrid ML risk analysis'
 requires-python='>=3.10'
-dependencies=['scikit-learn==1.8.0']
+dependencies=['scikit-learn==1.7.2']
 
 [project.optional-dependencies]
 api=['fastapi>=0.110','uvicorn>=0.29']
