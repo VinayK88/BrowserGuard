@@ -14,6 +14,8 @@ jobs:
       - run: python -m pip install --upgrade pip
       - run: pip install -e '.[api]'
       - run: python -m unittest discover -s tests -v
+      - run: python scripts/verify_baseline.py
       - run: browserguard > /tmp/browserguard-report.json
       - run: python -c "from browserguard.api import app; assert any(r.path == '/extensions/{ext_id}' for r in app.routes)"
+      - run: python -c "from browserguard.report import build_report; r=build_report(); assert r['summary']['ml_model']=='IsolationForest'"
       - run: python -m compileall browserguard

@@ -13,7 +13,9 @@ class Extension:
 
 @dataclass(frozen=True)
 class Assessment:
-    ext_id:str; name:str; decision:Decision; risk_score:int; api_ratio:float
-    users_exposed:int; reasons:list[str]; actions:list[str]
+    ext_id:str; name:str; decision:Decision; risk_score:int; rule_score:int
+    ml_anomaly_score:float; ml_outlier:bool; ml_adjustment:int
+    api_ratio:float; users_exposed:int; top_feature_deviations:list[str]
+    reasons:list[str]; actions:list[str]
     def to_dict(self):
         d=asdict(self); d['decision']=self.decision.value; return d
