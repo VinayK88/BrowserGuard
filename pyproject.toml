@@ -1,0 +1,14 @@
+[build-system]
+requires=['setuptools>=68']
+build-backend='setuptools.build_meta'
+[project]
+name='browserguard'
+version='0.1.0'
+description='Defensive browser and extension detection/response lab'
+requires-python='>=3.10'
+[project.optional-dependencies]
+api=['fastapi>=0.110','uvicorn>=0.29']
+[project.scripts]
+browserguard='browserguard.cli:main'
+[tool.setuptools.packages.find]
+include=['browserguard*']
